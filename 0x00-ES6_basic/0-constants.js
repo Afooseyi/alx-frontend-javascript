@@ -1,17 +1,15 @@
-function taskFirst() {
-  const name = 'John';
-  const age = 25;
-  const country = 'USA';
-
-  console.log(`Name: ${name}`);
-  console.log(`Age: ${age}`);
-  console.log(`Country: ${country}`);
+export function taskFirst() {
+  const task = 'I prefer const when I can.';
+  return task;
 }
 
-function taskNext() {
-  let x = 5;
-  let y = 10;
-  let sum = x + y;
+export function getLast() {
+  return ' is okay';
+}
 
-  console.log(`Sum: ${sum}`);
+export function taskNext() {
+  let combination = 'But sometimes let';
+  combination += getLast();
+
+  return combination;
 }
